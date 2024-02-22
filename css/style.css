@@ -197,6 +197,7 @@ img{
     background-position:center;
     margin: 0 auto;
 }
+
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
 (min-resolution: 2dpx) {
   .hero {
@@ -204,50 +205,8 @@ img{
   linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46,47,66,0.7 )
   ),
-  url(../images/office-m.jpg);
+  url(../images/office-m-2x.jpg);
   }
-}
-@media screen and (min-width: 768px) {
-    .hero {
-        background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46,47,66,0.7 )
-        ),
-        url(../images/office-t.jpg);
-        max-width: 768px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
-(min-resolution: 2dpx) {
-  .hero {
-    background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46,47,66,0.7 )
-    ),
-    url(../images/office-t-2x.jpg);
-}
-}
-@media screen and (min-width: 1158px) {
-    .hero {
-        background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46,47,66,0.7 )
-        ),
-        url(../images/office.jpg);
-        max-width: 1440px;
-}
-}
-
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
-(min-resolution: 2dpx) {
-    .hero {
-        background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46,47,66,0.7 )
-        ),
-        url(../images/office-2x.jpg);
-}
 }
 
 .hero_btn{
@@ -1033,8 +992,20 @@ color: #404BBF;
         max-width: 496px;
     }
     .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-t.jpg);
         padding-top: 112px;
         padding-bottom: 112px;
+    }
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+    (min-resolution: 2dpx) {
+        .hero {
+            background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46,47,66,0.7 )
+            ),
+            url(../images/office-t-2x.jpg);
+            max-width: 768px;
+      }
     }
     .plan{
         padding-top: 96px;
@@ -1043,9 +1014,9 @@ color: #404BBF;
     
     .plan_list{
         display: flex;
-        column-gap: 72px;
+        gap: 24px;
         flex-direction: row;
-        row-gap: 24px;
+        row-gap: 72px;
         flex-wrap: wrap;
 
     }
@@ -1059,7 +1030,8 @@ color: #404BBF;
     }
 
     .plan_list_item{
-        width: calc((100% - 72px) / 2); 
+        width: calc((100% - 72px) / 2);
+        width: 356px; 
         
     }
 
@@ -1231,6 +1203,17 @@ color: #404BBF;
         padding-bottom: 188px;
     }
 
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+    (min-resolution: 2dpx){
+        .hero {
+            background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46,47,66,0.7 )
+            ),
+            url(../images/office-2x.jpg);
+            max-width: 1440px;
+    }
+    }
     .plan{
         padding-top: 120px;
         padding-bottom: 120px;
